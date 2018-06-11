@@ -9,7 +9,7 @@ matrix_t::matrix_t( matrix_t const & other )
 	rows_ = other.rows();
 	collumns_ = other.collumns();
 	elements_ = new int *[rows_];
-	for (unsigned int i = 0; i < rows_; ++i) {
+	for (unsigned int i = 0; i < rows_; ++i)  {
 		elements_[i] = new int[collumns_];
 		for (unsigned int j = 0; j < collumns_; ++j) {
 			elements_[i][j] = other.elements_[i][j];
